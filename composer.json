@@ -1,0 +1,34 @@
+{
+    "name": "pronabsen/swaggervel",
+    "description": "A great way to integrate Swagger into Laravel",
+    "keywords": ["laravel", "swagger", "documentation", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jlapp",
+            "email": "jordan@jordanlapp.com"
+        },
+        {
+            "name": "Pronab Sen",
+            "email": "pronabsen18@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1|^8.0",
+        "illuminate/support": "^8.83.10",
+        "swagger-api/swagger-ui": "^4.12",
+        "zircote/swagger-php": "^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Appointer\\Swaggervel": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Appointer\\Swaggervel\\SwaggervelServiceProvider"
+            ]
+        }
+    }
+}
